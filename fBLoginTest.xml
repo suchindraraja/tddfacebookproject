@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="5">
+  <test name="Test1">
+  	<parameter name="eadd" value=""></parameter>
+  	<parameter name="eaddc" value="blank"></parameter>
+  	<parameter name="pass" value="PNRSIR@123"></parameter>
+  	<parameter name="passc" value="valid"></parameter>
+  	<parameter name="bname" value="chrome"></parameter>
+  	<classes>
+  		<class name="tests.FBLoginTest"></class>
+  	</classes>
+  </test>
+  <test name="Test2">
+  	<parameter name="eadd" value="codenonnnncontributors123@gmail.com"></parameter>
+  	<parameter name="eaddc" value="invalid"></parameter>
+  	<parameter name="pass" value="PNRSIR@123"></parameter>
+  	<parameter name="passc" value="valid"></parameter>
+  	<parameter name="bname" value="chrome"></parameter>
+  	<classes>
+  		<class name="tests.FBLoginTest"></class>
+  	</classes>
+  </test>
+  <test name="Test3">
+  	<parameter name="eadd" value="codecontributors123@gmail.com"></parameter>
+  	<parameter name="eaddc" value="valid"></parameter>
+  	<parameter name="pass" value=""></parameter>
+  	<parameter name="passc" value="blank"></parameter>
+  	<parameter name="bname" value="chrome"></parameter>
+  	<classes>
+  		<class name="tests.FBLoginTest"></class>
+  	</classes>
+  </test>
+  <test name="Test4">
+  	<parameter name="eadd" value="codecontributors123@gmail.com"></parameter>
+  	<parameter name="eaddc" value="valid"></parameter>
+  	<parameter name="pass" value="SIRPNR@123"></parameter>
+  	<parameter name="passc" value="invalid"></parameter>
+  	<parameter name="bname" value="chrome"></parameter>
+  	<classes>
+  		<class name="tests.FBLoginTest"></class>
+  	</classes>
+  </test>
+  <test name="Test5">
+  	<parameter name="eadd" value="codecontributors123@gmail.com"></parameter>
+  	<parameter name="eaddc" value="valid"></parameter>
+  	<parameter name="pass" value="PNRSIR@123"></parameter>
+  	<parameter name="passc" value="valid"></parameter>
+  	<parameter name="bname" value="chrome"></parameter>
+  	<classes>
+  		<class name="tests.FBLoginTest"></class>
+  	</classes>
+  </test>
+</suite>
