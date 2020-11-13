@@ -87,7 +87,7 @@ public class FBLoginTestDataProviderClass
 			else
 			{
 				String ssname=tu.screenshot();
-				Reporter.log("Login test failed and refer "+ssname);
+				Reporter.log("Login test failed");
 				//String code="<img src=\"file:///"+ssname+"\" alt=\"\"/>";
 				String code="<a href=\""+ssname+"\"><img src=\""+ssname+"\" height=\"100\" width=\"100\"/></a>";
 				Reporter.log(code);
