@@ -8,6 +8,8 @@ import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,6 +20,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.FBHomepage;
 import pages.FBLoginpage;
 import utilities.TestUtility;
@@ -151,5 +154,16 @@ public class FBLoginTestDataProviderExcel
 	{
 		//Close site
 		tu.closeSite();
+	}
+	
+	//Automating Results file
+	//@AfterSuite
+	public void openResults()
+	{
+		WebDriverManager.chromedriver().setup();
+		RemoteWebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("E:\\Automation\\AutomationNested\\com.tddtestng.gui.facebook\\test-output\\index.html");
+		driver.findElement(By.xpath("//*[text()='Reporter output']")).click();
 	}
 }

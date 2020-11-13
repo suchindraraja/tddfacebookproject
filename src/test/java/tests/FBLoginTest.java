@@ -2,14 +2,18 @@ package tests;
 
 import java.util.Properties;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.FBHomepage;
 import pages.FBLoginpage;
 import utilities.TestUtility;
@@ -108,5 +112,16 @@ public class FBLoginTest
 	{
 		//Close site
 		driver.close();
+	}
+	
+	//Automating Results file
+	//@AfterSuite
+	public void openResults()
+	{
+		WebDriverManager.chromedriver().setup();
+		RemoteWebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("E:\\Automation\\AutomationNested\\com.tddtestng.gui.facebook\\test-output\\index.html");
+		driver.findElement(By.xpath("//*[text()='Reporter output']")).click();
 	}
 }
