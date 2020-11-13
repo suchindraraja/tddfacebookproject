@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="19" passed="19">
+  <reporter-output>
+    <line>
+      <![CDATA[Blank/Invalid password test passed]]>
+    </line>
+    <line>
+      <![CDATA[Blank/Invalid password test passed]]>
+    </line>
+    <line>
+      <![CDATA[Blank/Nondomain email address test passed]]>
+    </line>
+    <line>
+      <![CDATA[Invalid email address test passed]]>
+    </line>
+    <line>
+      <![CDATA[Blank/Invalid password test passed]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="28712" started-at="2020-11-13T18:06:16 IST" finished-at="2020-11-13T18:06:44 IST">
+    <groups>
+    </groups>
+    <test name="Test3" duration-ms="27714" started-at="2020-11-13T18:06:16 IST" finished-at="2020-11-13T18:06:43 IST">
+      <class name="tests.FBLoginTest">
+        <test-method status="PASS" signature="launchSite(java.lang.String)[pri:1, instance:tests.FBLoginTest@57536d79]" name="launchSite" duration-ms="17418" started-at="2020-11-13T18:06:16 IST" finished-at="2020-11-13T18:06:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.FBLoginTest@57536d79]" name="loginTest" duration-ms="8499" started-at="2020-11-13T18:06:33 IST" finished-at="2020-11-13T18:06:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[codecontributors123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[blank]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Blank/Invalid password test passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="closeSite()[pri:3, instance:tests.FBLoginTest@57536d79]" name="closeSite" duration-ms="1722" started-at="2020-11-13T18:06:42 IST" finished-at="2020-11-13T18:06:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+      </class> <!-- tests.FBLoginTest -->
+    </test> <!-- Test3 -->
+    <test name="Test2" duration-ms="27740" started-at="2020-11-13T18:06:16 IST" finished-at="2020-11-13T18:06:43 IST">
+      <class name="tests.FBLoginTest">
+        <test-method status="PASS" signature="launchSite(java.lang.String)[pri:1, instance:tests.FBLoginTest@6f1fba17]" name="launchSite" duration-ms="17476" started-at="2020-11-13T18:06:16 IST" finished-at="2020-11-13T18:06:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.FBLoginTest@6f1fba17]" name="loginTest" duration-ms="9798" started-at="2020-11-13T18:06:33 IST" finished-at="2020-11-13T18:06:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[codenonnnncontributors123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[PNRSIR@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Invalid email address test passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="closeSite()[pri:3, instance:tests.FBLoginTest@6f1fba17]" name="closeSite" duration-ms="398" started-at="2020-11-13T18:06:43 IST" finished-at="2020-11-13T18:06:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+      </class> <!-- tests.FBLoginTest -->
+    </test> <!-- Test2 -->
+    <test name="Test1" duration-ms="27981" started-at="2020-11-13T18:06:16 IST" finished-at="2020-11-13T18:06:44 IST">
+      <class name="tests.FBLoginTest">
+        <test-method status="PASS" signature="launchSite(java.lang.String)[pri:1, instance:tests.FBLoginTest@1e127982]" name="launchSite" duration-ms="19219" started-at="2020-11-13T18:06:16 IST" finished-at="2020-11-13T18:06:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.FBLoginTest@1e127982]" name="loginTest" duration-ms="7721" started-at="2020-11-13T18:06:35 IST" finished-at="2020-11-13T18:06:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[blank]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[PNRSIR@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Blank/Nondomain email address test passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="closeSite()[pri:3, instance:tests.FBLoginTest@1e127982]" name="closeSite" duration-ms="974" started-at="2020-11-13T18:06:43 IST" finished-at="2020-11-13T18:06:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+      </class> <!-- tests.FBLoginTest -->
+    </test> <!-- Test1 -->
+    <test name="Test5" duration-ms="28666" started-at="2020-11-13T18:06:16 IST" finished-at="2020-11-13T18:06:44 IST">
+      <class name="tests.FBLoginTest">
+        <test-method status="PASS" signature="launchSite(java.lang.String)[pri:1, instance:tests.FBLoginTest@67b92f0a]" name="launchSite" duration-ms="17924" started-at="2020-11-13T18:06:16 IST" finished-at="2020-11-13T18:06:34 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.FBLoginTest@67b92f0a]" name="loginTest" duration-ms="9014" started-at="2020-11-13T18:06:34 IST" finished-at="2020-11-13T18:06:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[codecontributors123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[PNRSIR@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="closeSite()[pri:3, instance:tests.FBLoginTest@67b92f0a]" name="closeSite" duration-ms="1664" started-at="2020-11-13T18:06:43 IST" finished-at="2020-11-13T18:06:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+      </class> <!-- tests.FBLoginTest -->
+    </test> <!-- Test5 -->
+    <test name="Test4" duration-ms="28711" started-at="2020-11-13T18:06:16 IST" finished-at="2020-11-13T18:06:44 IST">
+      <class name="tests.FBLoginTest">
+        <test-method status="PASS" signature="launchSite(java.lang.String)[pri:1, instance:tests.FBLoginTest@1f28c152]" name="launchSite" duration-ms="17568" started-at="2020-11-13T18:06:16 IST" finished-at="2020-11-13T18:06:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.FBLoginTest@1f28c152]" name="loginTest" duration-ms="9093" started-at="2020-11-13T18:06:33 IST" finished-at="2020-11-13T18:06:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[codecontributors123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SIRPNR@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Blank/Invalid password test passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="closeSite()[pri:3, instance:tests.FBLoginTest@1f28c152]" name="closeSite" duration-ms="1984" started-at="2020-11-13T18:06:42 IST" finished-at="2020-11-13T18:06:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+      </class> <!-- tests.FBLoginTest -->
+    </test> <!-- Test4 -->
+  </suite> <!-- Suite -->
+  <suite name="Suite (0)" duration-ms="21381" started-at="2020-11-13T18:06:45 IST" finished-at="2020-11-13T18:07:06 IST">
+    <groups>
+    </groups>
+    <test name="Login Test" duration-ms="21381" started-at="2020-11-13T18:06:45 IST" finished-at="2020-11-13T18:07:06 IST">
+      <class name="tests.FBLoginTestDataProvider">
+        <test-method status="PASS" signature="launchSite()[pri:1, instance:tests.FBLoginTestDataProvider@3701eaf6]" name="launchSite" duration-ms="8039" started-at="2020-11-13T18:06:45 IST" finished-at="2020-11-13T18:06:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.FBLoginTestDataProvider@3701eaf6]" name="loginTest" duration-ms="6482" started-at="2020-11-13T18:06:53 IST" data-provider="testdata" finished-at="2020-11-13T18:06:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[codecontributors123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[blank]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Blank/Invalid password test passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.FBLoginTestDataProvider@3701eaf6]" name="loginTest" duration-ms="6723" started-at="2020-11-13T18:06:59 IST" data-provider="testdata" finished-at="2020-11-13T18:07:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[codecontributors123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[nageswararao]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="closeSite()[pri:3, instance:tests.FBLoginTestDataProvider@3701eaf6]" name="closeSite" duration-ms="126" started-at="2020-11-13T18:07:06 IST" finished-at="2020-11-13T18:07:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+      </class> <!-- tests.FBLoginTestDataProvider -->
+    </test> <!-- Login Test -->
+  </suite> <!-- Suite (0) -->
+</testng-results>
