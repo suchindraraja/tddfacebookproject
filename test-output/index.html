@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>E:\Automation\AutomationNested\com.tddtestng.gui.facebook\fBLoginTestDataProviderClass.xml</span>
+                    <span>E:\Automation\AutomationNested\com.tddtestng.gui.facebook\fBLoginTestDataProvider.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.FBLoginTestDataProvider" hash-for-method="loginTest(, blank, PNRSIR@123, alid)">loginTest(, blank, PNRSIR@123, alid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,37 +118,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.FBLoginTestDataProviderClass" hash-for-method="closeSite">closeSite</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.FBLoginTestDataProvider" hash-for-method="loginTest(codecontributors123@gmail.com, valid, PNRSIR@123, valid)">loginTest(codecontributors123@gmail.com, valid, PNRSIR@123, valid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.FBLoginTestDataProviderClass" hash-for-method="launchSite">launchSite</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.FBLoginTestDataProvider" hash-for-method="loginTest(codecontributors123@gmail.com, valid, nageswararao, invalid)">loginTest(codecontributors123@gmail.com, valid, nageswararao, invalid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.FBLoginTestDataProviderClass" hash-for-method="loginTest(, blank, PNRSIR@123, valid)">loginTest(, blank, PNRSIR@123, valid)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.FBLoginTestDataProvider" hash-for-method="loginTest(codenonnnncontributors123@gmail.com, invalid, PNRSIR@123, valid)">loginTest(codenonnnncontributors123@gmail.com, invalid, PNRSIR@123, valid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.FBLoginTestDataProviderClass" hash-for-method="loginTest(codecontributors123@gmail.com, valid, nageswararao, invalid)">loginTest(codecontributors123@gmail.com, valid, nageswararao, invalid)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.FBLoginTestDataProviderClass" hash-for-method="loginTest(codecontributors123@gmail.com, valid, PNRSIR@123, valid)">loginTest(codecontributors123@gmail.com, valid, PNRSIR@123, valid)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.FBLoginTestDataProviderClass" hash-for-method="loginTest(codenonnnncontributors123@gmail.com, invalid, PNRSIR@123, valid)">loginTest(codenonnnncontributors123@gmail.com, invalid, PNRSIR@123, valid)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.FBLoginTestDataProviderClass" hash-for-method="loginTest(codecontributors123@gmail.com, valid, , blank)">loginTest(codecontributors123@gmail.com, valid, , blank)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.FBLoginTestDataProvider" hash-for-method="loginTest(codecontributors123@gmail.com, valid, , blank)">loginTest(codecontributors123@gmail.com, valid, , blank)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -149,32 +148,39 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.FBLoginTestDataProviderClass</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.FBLoginTestDataProvider</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="closeSite">
-                  </a> <!-- closeSite -->
-                  <span class="method-name">closeSite</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="launchSite">
-                  </a> <!-- launchSite -->
-                  <span class="method-name">launchSite</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest(, blank, PNRSIR@123, valid)">
-                  </a> <!-- loginTest(, blank, PNRSIR@123, valid) -->
+                  <a name="loginTest(, blank, PNRSIR@123, alid)">
+                  </a> <!-- loginTest(, blank, PNRSIR@123, alid) -->
                   <span class="method-name">loginTest</span>
-                  <span class="parameters">(, blank, PNRSIR@123, valid)</span>
+                  <span class="parameters">(, blank, PNRSIR@123, alid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.FBLoginTestDataProvider.loginTest(FBLoginTestDataProvider.java:115)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.FBLoginTestDataProvider</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(codecontributors123@gmail.com, valid, PNRSIR@123, valid)">
+                  </a> <!-- loginTest(codecontributors123@gmail.com, valid, PNRSIR@123, valid) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(codecontributors123@gmail.com, valid, PNRSIR@123, valid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -183,14 +189,6 @@
                   </a> <!-- loginTest(codecontributors123@gmail.com, valid, nageswararao, invalid) -->
                   <span class="method-name">loginTest</span>
                   <span class="parameters">(codecontributors123@gmail.com, valid, nageswararao, invalid)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest(codecontributors123@gmail.com, valid, PNRSIR@123, valid)">
-                  </a> <!-- loginTest(codecontributors123@gmail.com, valid, PNRSIR@123, valid) -->
-                  <span class="method-name">loginTest</span>
-                  <span class="parameters">(codecontributors123@gmail.com, valid, PNRSIR@123, valid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -214,18 +212,18 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\Automation\AutomationNested\com.tddtestng.gui.facebook\fBLoginTestDataProviderClass.xml</span>
+            <span class="header-content">E:\Automation\AutomationNested\com.tddtestng.gui.facebook\fBLoginTestDataProvider.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.FBLoginTestDataProviderClass&quot;/&gt;
+      &lt;class name=&quot;tests.FBLoginTestDataProvider&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Login Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -237,7 +235,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Login Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -263,40 +261,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'tests.FBLoginTestDataProviderClass')
-data.setCell(0, 3, 9383);
+data.setCell(0, 2, 'tests.FBLoginTestDataProvider')
+data.setCell(0, 3, 9643);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'launchSite')
-data.setCell(1, 2, 'tests.FBLoginTestDataProviderClass')
-data.setCell(1, 3, 7653);
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'tests.FBLoginTestDataProvider')
+data.setCell(1, 3, 6766);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginTest')
-data.setCell(2, 2, 'tests.FBLoginTestDataProviderClass')
-data.setCell(2, 3, 6572);
+data.setCell(2, 2, 'tests.FBLoginTestDataProvider')
+data.setCell(2, 3, 6580);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginTest')
-data.setCell(3, 2, 'tests.FBLoginTestDataProviderClass')
-data.setCell(3, 3, 6537);
+data.setCell(3, 2, 'tests.FBLoginTestDataProvider')
+data.setCell(3, 3, 6552);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'loginTest')
-data.setCell(4, 2, 'tests.FBLoginTestDataProviderClass')
-data.setCell(4, 3, 6513);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginTest')
-data.setCell(5, 2, 'tests.FBLoginTestDataProviderClass')
-data.setCell(5, 3, 6434);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'closeSite')
-data.setCell(6, 2, 'tests.FBLoginTestDataProviderClass')
-data.setCell(6, 3, 280);
+data.setCell(4, 2, 'tests.FBLoginTestDataProvider')
+data.setCell(4, 3, 6526);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -308,15 +298,15 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">loginTest(, blank, PNRSIR@123, valid)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Blank/Nondomain email address test passed</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">loginTest(codecontributors123@gmail.com, valid, PNRSIR@123, valid)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Login test passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginTest(codecontributors123@gmail.com, valid, nageswararao, invalid)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Blank/Invalid password test passed</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -329,6 +319,13 @@ return data;
               <span class="reporter-method-name">loginTest(codecontributors123@gmail.com, valid, , blank)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Blank/Invalid password test passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginTest(, blank, PNRSIR@123, alid)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Login test failed</span>
+                <span class="reporter-method-output"><img src="file:///E:\Automation\AutomationNested\com.tddtestng.gui.facebook\13-Nov-2020-08-19-15.png" alt=""/></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -346,35 +343,73 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.FBLoginTestDataProviderClass</div> <!-- chronological-class-name -->
-              <div class="test-method">
+              <div class="chronological-class-name">tests.FBLoginTestDataProvider</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
                 <span class="method-name">launchSite</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest(, blank, PNRSIR@123, valid)</span>
-                <span class="method-start">7673 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest(, blank, PNRSIR@123, alid)</span>
+                <span class="method-start">7893 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeSite</span>
+                <span class="method-start">14664 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchSite</span>
+                <span class="method-start">14906 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(codenonnnncontributors123@gmail.com, invalid, PNRSIR@123, valid)</span>
-                <span class="method-start">14212 ms</span>
+                <span class="method-start">20997 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeSite</span>
+                <span class="method-start">27578 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchSite</span>
+                <span class="method-start">27664 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(codecontributors123@gmail.com, valid, , blank)</span>
-                <span class="method-start">20786 ms</span>
+                <span class="method-start">33454 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeSite</span>
+                <span class="method-start">39982 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchSite</span>
+                <span class="method-start">40138 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(codecontributors123@gmail.com, valid, nageswararao, invalid)</span>
-                <span class="method-start">27221 ms</span>
+                <span class="method-start">46055 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeSite</span>
+                <span class="method-start">52609 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchSite</span>
+                <span class="method-start">53057 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(codecontributors123@gmail.com, valid, PNRSIR@123, valid)</span>
-                <span class="method-start">33735 ms</span>
+                <span class="method-start">60096 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
+              <div class="configuration-method after">
                 <span class="method-name">closeSite</span>
-                <span class="method-start">43120 ms</span>
-              </div> <!-- test-method -->
+                <span class="method-start">69741 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">openResults</span>
+                <span class="method-start">70044 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

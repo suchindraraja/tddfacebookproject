@@ -5,7 +5,10 @@
     <classes>
       <class name="tests.FBLoginTestDataProvider">
         <methods>
-          <include name="loginTest" invocation-numbers="2 3"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="launchSite"/>
+          <include name="closeSite"/>
+          <include name="openResults"/>
         </methods>
       </class> <!-- tests.FBLoginTestDataProvider -->
     </classes>

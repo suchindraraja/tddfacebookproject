@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
     <line>
-      <![CDATA[Blank/Nondomain email address test passed]]>
+      <![CDATA[Login test failed]]>
+    </line>
+    <line>
+      <![CDATA[<img src="file:///E:\Automation\AutomationNested\com.tddtestng.gui.facebook\13-Nov-2020-08-19-15.png" alt=""/>]]>
     </line>
     <line>
       <![CDATA[Invalid email address test passed]]>
@@ -11,19 +14,22 @@
       <![CDATA[Blank/Invalid password test passed]]>
     </line>
     <line>
+      <![CDATA[Blank/Invalid password test passed]]>
+    </line>
+    <line>
       <![CDATA[Login test passed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="43460" started-at="2020-11-13T18:50:40 IST" finished-at="2020-11-13T18:51:23 IST">
+  <suite name="Suite" duration-ms="70076" started-at="2020-11-13T20:19:00 IST" finished-at="2020-11-13T20:20:10 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="43460" started-at="2020-11-13T18:50:40 IST" finished-at="2020-11-13T18:51:23 IST">
-      <class name="tests.FBLoginTestDataProviderClass">
-        <test-method status="PASS" signature="launchSite()[pri:1, instance:tests.FBLoginTestDataProviderClass@27a8c74e]" name="launchSite" duration-ms="7653" started-at="2020-11-13T18:50:40 IST" finished-at="2020-11-13T18:50:47 IST">
+    <test name="Login Test" duration-ms="70076" started-at="2020-11-13T20:19:00 IST" finished-at="2020-11-13T20:20:10 IST">
+      <class name="tests.FBLoginTestDataProvider">
+        <test-method status="PASS" signature="launchSite()[pri:0, instance:tests.FBLoginTestDataProvider@1a1d6a08]" name="launchSite" is-config="true" duration-ms="7892" started-at="2020-11-13T20:19:00 IST" finished-at="2020-11-13T20:19:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSite -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.FBLoginTestDataProviderClass@27a8c74e]" name="loginTest" duration-ms="6537" started-at="2020-11-13T18:50:47 IST" data-provider="testdata" finished-at="2020-11-13T18:50:54 IST">
+        <test-method status="FAIL" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:tests.FBLoginTestDataProvider@1a1d6a08]" name="loginTest" duration-ms="6766" started-at="2020-11-13T20:19:08 IST" data-provider="testdata" finished-at="2020-11-13T20:19:15 IST">
           <params>
             <param index="0">
               <value>
@@ -42,17 +48,70 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[valid]]>
+                <![CDATA[alid]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at tests.FBLoginTestDataProvider.loginTest(FBLoginTestDataProvider.java:115)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Blank/Nondomain email address test passed]]>
+              <![CDATA[Login test failed]]>
+            </line>
+            <line>
+              <![CDATA[<img src="file:///E:\Automation\AutomationNested\com.tddtestng.gui.facebook\13-Nov-2020-08-19-15.png" alt=""/>]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.FBLoginTestDataProviderClass@27a8c74e]" name="loginTest" duration-ms="6572" started-at="2020-11-13T18:50:54 IST" data-provider="testdata" finished-at="2020-11-13T18:51:00 IST">
+        <test-method status="PASS" signature="closeSite()[pri:0, instance:tests.FBLoginTestDataProvider@1a1d6a08]" name="closeSite" is-config="true" duration-ms="241" started-at="2020-11-13T20:19:15 IST" finished-at="2020-11-13T20:19:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+        <test-method status="PASS" signature="launchSite()[pri:0, instance:tests.FBLoginTestDataProvider@1a1d6a08]" name="launchSite" is-config="true" duration-ms="6091" started-at="2020-11-13T20:19:15 IST" finished-at="2020-11-13T20:19:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:tests.FBLoginTestDataProvider@1a1d6a08]" name="loginTest" duration-ms="6580" started-at="2020-11-13T20:19:21 IST" data-provider="testdata" finished-at="2020-11-13T20:19:28 IST">
           <params>
             <param index="0">
               <value>
@@ -81,7 +140,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.FBLoginTestDataProviderClass@27a8c74e]" name="loginTest" duration-ms="6434" started-at="2020-11-13T18:51:00 IST" data-provider="testdata" finished-at="2020-11-13T18:51:07 IST">
+        <test-method status="PASS" signature="closeSite()[pri:0, instance:tests.FBLoginTestDataProvider@1a1d6a08]" name="closeSite" is-config="true" duration-ms="85" started-at="2020-11-13T20:19:28 IST" finished-at="2020-11-13T20:19:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+        <test-method status="PASS" signature="launchSite()[pri:0, instance:tests.FBLoginTestDataProvider@1a1d6a08]" name="launchSite" is-config="true" duration-ms="5790" started-at="2020-11-13T20:19:28 IST" finished-at="2020-11-13T20:19:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:tests.FBLoginTestDataProvider@1a1d6a08]" name="loginTest" duration-ms="6526" started-at="2020-11-13T20:19:34 IST" data-provider="testdata" finished-at="2020-11-13T20:19:40 IST">
           <params>
             <param index="0">
               <value>
@@ -110,7 +177,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.FBLoginTestDataProviderClass@27a8c74e]" name="loginTest" duration-ms="6513" started-at="2020-11-13T18:51:07 IST" data-provider="testdata" finished-at="2020-11-13T18:51:13 IST">
+        <test-method status="PASS" signature="closeSite()[pri:0, instance:tests.FBLoginTestDataProvider@1a1d6a08]" name="closeSite" is-config="true" duration-ms="156" started-at="2020-11-13T20:19:40 IST" finished-at="2020-11-13T20:19:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+        <test-method status="PASS" signature="launchSite()[pri:0, instance:tests.FBLoginTestDataProvider@1a1d6a08]" name="launchSite" is-config="true" duration-ms="5917" started-at="2020-11-13T20:19:40 IST" finished-at="2020-11-13T20:19:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:tests.FBLoginTestDataProvider@1a1d6a08]" name="loginTest" duration-ms="6552" started-at="2020-11-13T20:19:46 IST" data-provider="testdata" finished-at="2020-11-13T20:19:53 IST">
           <params>
             <param index="0">
               <value>
@@ -134,9 +209,20 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Blank/Invalid password test passed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.FBLoginTestDataProviderClass@27a8c74e]" name="loginTest" duration-ms="9383" started-at="2020-11-13T18:51:13 IST" data-provider="testdata" finished-at="2020-11-13T18:51:23 IST">
+        <test-method status="PASS" signature="closeSite()[pri:0, instance:tests.FBLoginTestDataProvider@1a1d6a08]" name="closeSite" is-config="true" duration-ms="448" started-at="2020-11-13T20:19:53 IST" finished-at="2020-11-13T20:19:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+        <test-method status="PASS" signature="launchSite()[pri:0, instance:tests.FBLoginTestDataProvider@1a1d6a08]" name="launchSite" is-config="true" duration-ms="7039" started-at="2020-11-13T20:19:53 IST" finished-at="2020-11-13T20:20:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:tests.FBLoginTestDataProvider@1a1d6a08]" name="loginTest" duration-ms="9643" started-at="2020-11-13T20:20:00 IST" data-provider="testdata" finished-at="2020-11-13T20:20:10 IST">
           <params>
             <param index="0">
               <value>
@@ -165,11 +251,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="closeSite()[pri:3, instance:tests.FBLoginTestDataProviderClass@27a8c74e]" name="closeSite" duration-ms="280" started-at="2020-11-13T18:51:23 IST" finished-at="2020-11-13T18:51:23 IST">
+        <test-method status="PASS" signature="closeSite()[pri:0, instance:tests.FBLoginTestDataProvider@1a1d6a08]" name="closeSite" is-config="true" duration-ms="266" started-at="2020-11-13T20:20:10 IST" finished-at="2020-11-13T20:20:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSite -->
-      </class> <!-- tests.FBLoginTestDataProviderClass -->
-    </test> <!-- Test -->
+        <test-method status="PASS" signature="openResults()[pri:0, instance:tests.FBLoginTestDataProvider@1a1d6a08]" name="openResults" is-config="true" duration-ms="7180" started-at="2020-11-13T20:20:10 IST" finished-at="2020-11-13T20:20:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openResults -->
+      </class> <!-- tests.FBLoginTestDataProvider -->
+    </test> <!-- Login Test -->
   </suite> <!-- Suite -->
 </testng-results>
