@@ -1,7 +1,13 @@
 package tests;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -24,16 +30,39 @@ public class FBLoginTestDataProviderExcel
 	FBHomepage fbhp;
 	
 	@DataProvider(name="testdata",indices= {1,2,3})
-	public Object[][] testData()
+	public Object[][] testData() throws Exception
 	{
-		Object[][] data=new Object[][] 
+		//Open excel file for reading
+		File f=new File("FBLoginTestDataProviderExcel.xlsx");
+		FileInputStream fi=new FileInputStream(f);
+		Workbook wb=WorkbookFactory.create(fi);
+		Sheet sh=wb.getSheet("Sheet1"); //0 for sheet1
+		int nour=sh.getPhysicalNumberOfRows();
+		int nouc=sh.getRow(0).getLastCellNum();
+		//Rows-No.of times the test has to be repeated
+		//Columns-No.of parameters in test data
+		Object[][] data=new Object[nour-1][nouc];
+		//1st row(index=0) in excel have names of column
+		//Copy data from 2nd row(index=1)
+		for(int i=1;i<nour;i++)
 		{
-			{"","blank","PNRSIR@123","valid"},
-			{"codenonnnncontributors123@gmail.com","invalid","PNRSIR@123","valid"},
-			{"codecontributors123@gmail.com","valid","","blank"},
-			{"codecontributors123@gmail.com","valid","nageswararao","invalid"},
-			{"codecontributors123@gmail.com","valid","PNRSIR@123","valid"}
-		};
+			DataFormatter df=new DataFormatter();
+			data[i-1][0]=df.formatCellValue(sh.getRow(i).getCell(0));
+			data[i-1][1]=df.formatCellValue(sh.getRow(i).getCell(1));
+			data[i-1][2]=df.formatCellValue(sh.getRow(i).getCell(2));
+			data[i-1][3]=df.formatCellValue(sh.getRow(i).getCell(3));
+		}
+		/*for(int i=1;i<nour;i++)
+		{
+			for(int j=0;j<nouc;j++)
+			{
+				DataFormatter df=new DataFormatter();
+				data[i-1][j]=df.formatCellValue(sh.getRow(i).getCell(j));
+			}
+		}*/
+		fi.close();
+		wb.close();
+		//Return array
 		return(data);
 	}
 	
