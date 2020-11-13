@@ -89,7 +89,7 @@ public class TestUtility
 	{
 		//Launch Site and maximize
 		driver.get(url);
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 	}
 	
 	public Properties accessProperties() throws Exception

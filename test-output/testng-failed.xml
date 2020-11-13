@@ -1,79 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="5" name="Test4(failed)" parallel="tests">
-    <parameter name="eadd" value="codecontributors123@gmail.com"/>
-    <parameter name="pass" value="SIRPNR@123"/>
-    <parameter name="bname" value="chrome"/>
-    <parameter name="passc" value="invalid"/>
-    <parameter name="eaddc" value="valid"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.FBLoginTest">
+      <class name="tests.FBLoginTestDataProvider">
         <methods>
-          <include name="loginTest" invocation-numbers="0"/>
-          <include name="closeSite"/>
+          <include name="loginTest" invocation-numbers="2 3"/>
         </methods>
-      </class> <!-- tests.FBLoginTest -->
+      </class> <!-- tests.FBLoginTestDataProvider -->
     </classes>
-  </test> <!-- Test4(failed) -->
-  <test thread-count="5" name="Test3(failed)" parallel="tests">
-    <parameter name="eadd" value="codecontributors123@gmail.com"/>
-    <parameter name="pass" value=""/>
-    <parameter name="bname" value="chrome"/>
-    <parameter name="passc" value="blank"/>
-    <parameter name="eaddc" value="valid"/>
-    <classes>
-      <class name="tests.FBLoginTest">
-        <methods>
-          <include name="loginTest" invocation-numbers="0"/>
-          <include name="closeSite"/>
-        </methods>
-      </class> <!-- tests.FBLoginTest -->
-    </classes>
-  </test> <!-- Test3(failed) -->
-  <test thread-count="5" name="Test2(failed)" parallel="tests">
-    <parameter name="eadd" value="codenonnnncontributors123@gmail.com"/>
-    <parameter name="pass" value="PNRSIR@123"/>
-    <parameter name="bname" value="chrome"/>
-    <parameter name="passc" value="valid"/>
-    <parameter name="eaddc" value="invalid"/>
-    <classes>
-      <class name="tests.FBLoginTest">
-        <methods>
-          <include name="loginTest" invocation-numbers="0"/>
-          <include name="closeSite"/>
-        </methods>
-      </class> <!-- tests.FBLoginTest -->
-    </classes>
-  </test> <!-- Test2(failed) -->
-  <test thread-count="5" name="Test1(failed)" parallel="tests">
-    <parameter name="eadd" value=""/>
-    <parameter name="pass" value="PNRSIR@123"/>
-    <parameter name="bname" value="chrome"/>
-    <parameter name="passc" value="valid"/>
-    <parameter name="eaddc" value="blank"/>
-    <classes>
-      <class name="tests.FBLoginTest">
-        <methods>
-          <include name="loginTest" invocation-numbers="0"/>
-          <include name="closeSite"/>
-        </methods>
-      </class> <!-- tests.FBLoginTest -->
-    </classes>
-  </test> <!-- Test1(failed) -->
-  <test thread-count="5" name="Test5(failed)" parallel="tests">
-    <parameter name="eadd" value="codecontributors123@gmail.com"/>
-    <parameter name="pass" value="PNRSIR@123"/>
-    <parameter name="bname" value="chrome"/>
-    <parameter name="passc" value="valid"/>
-    <parameter name="eaddc" value="valid"/>
-    <classes>
-      <class name="tests.FBLoginTest">
-        <methods>
-          <include name="loginTest" invocation-numbers="0"/>
-          <include name="closeSite"/>
-        </methods>
-      </class> <!-- tests.FBLoginTest -->
-    </classes>
-  </test> <!-- Test5(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

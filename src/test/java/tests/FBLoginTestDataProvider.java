@@ -23,7 +23,7 @@ public class FBLoginTestDataProvider
 	FBLoginpage fblp;
 	FBHomepage fbhp;
 	
-	@DataProvider(name="testdata",indices= {1,2,3})
+	@DataProvider(name="testdata",indices= {2,3})
 	public Object[][] testData()
 	{
 		Object[][] data=new Object[][] 
@@ -37,7 +37,7 @@ public class FBLoginTestDataProvider
 		return(data);
 	}
 	
-	@Test(priority=1,dataProvider="testdata")
+	@Test(priority=1)
 	public void launchSite() throws Exception
 	{
 		//Create object to utility class
@@ -57,7 +57,7 @@ public class FBLoginTestDataProvider
 		wait.until(ExpectedConditions.visibilityOf(fblp.emailaddress));
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2,dataProvider="testdata")
 	public void loginTest(String x,String y,String z,String w) throws Exception
 	{
 		fblp.emailAddressFill(x);
@@ -103,8 +103,8 @@ public class FBLoginTestDataProvider
 			{
 				String ssname=tu.screenshot();
 				Reporter.log("Login test failed and refer "+ssname);
-				//String code="<img src=\"file:///"+ssname+"\" alt=\"\"/>";
-				String code="<a href=\""+ssname+"\"><img src=\""+ssname+"\" height=\"100\" width=\"100\"/></a>";
+				String code="<img src=\"file:///"+ssname+"\" alt=\"\"/>";
+				//String code="<a href=\""+ssname+"\"><img src=\""+ssname+"\" height=\"100\" width=\"200\"/></a>";
 				Reporter.log(code);
 				Assert.assertTrue(false);
 			}
@@ -119,6 +119,6 @@ public class FBLoginTestDataProvider
 	public void closeSite()
 	{
 		//Close site
-		driver.close();
+		tu.closeSite();
 	}
 }
