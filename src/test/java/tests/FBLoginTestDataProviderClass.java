@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pages.FBHomepage;
@@ -22,7 +24,7 @@ public class FBLoginTestDataProviderClass
 	FBLoginpage fblp;
 	FBHomepage fbhp;
 	
-	@Test(priority=1)
+	@BeforeMethod
 	public void launchSite() throws Exception
 	{
 		//Create object to utility class
@@ -42,7 +44,7 @@ public class FBLoginTestDataProviderClass
 		wait.until(ExpectedConditions.visibilityOf(fblp.emailaddress));
 	}
 	
-	@Test(priority=2,dataProviderClass=FBLoginTestDataProvider.class,dataProvider="testdata")
+	@Test(priority=1,dataProviderClass=FBLoginTestDataProvider.class,dataProvider="testdata")
 	public void loginTest(String x,String y,String z,String w) throws Exception
 	{
 		fblp.emailAddressFill(x);
@@ -100,10 +102,10 @@ public class FBLoginTestDataProviderClass
 		}	
 	}
 	
-	@Test(priority=3)
+	@AfterMethod
 	public void closeSite()
 	{
 		//Close site
-		driver.close();
+		tu.closeSite();
 	}
 }
